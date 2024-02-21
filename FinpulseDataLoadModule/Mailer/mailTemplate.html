@@ -1,0 +1,316 @@
+﻿<html lang="en">
+<head>
+
+    <style>
+        .white {
+            background-color: white;
+            color: black;
+        }
+
+        .courses-table {
+            font-size: 12px;
+            font-family: Calibri;
+        }
+
+        .bodystyle {
+            font-size: 14px;
+            font-family: Calibri;
+        }
+
+        .courses-table th {
+            border: 1px solid black;
+        }
+
+        .courses-table thead td {
+            border: 1px solid black;
+            padding: 9px;
+            text-align: center
+        }
+
+        .courses-table tbody td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center
+        }
+        /*.courses-table tbody td:nth-child(1) {
+                text-align: left;
+            }*/
+
+
+        /*.tbl2 tbody td:nth-child(4) {
+            background-color: #e7e6e6;
+            font-weight: bold;
+        }
+        .tbl2 tbody td:nth-child(8) {
+            background-color: #e7e6e6;
+            font-weight: bold;
+        }*/
+
+
+        .Graybold {
+            background-color: #e7e6e6;
+            font-weight: bold;
+        }
+
+        .Headings {
+            border: 1px solid black;
+            background-color: #fce4d6;
+        }
+
+        .High {
+            border: 1px solid black;
+            background-color: #fce4d6;
+            font-weight: bold;
+        }
+
+
+        .Medium {
+            border: 1px solid #8a6d3b;
+            background-color: #faebcc;
+            color: #8a6d3b;
+        }
+
+        .Low {
+            border: 1px solid #3c763d;
+            background-color: #d6e9c6;
+            color: #3c763d;
+        }
+
+        table {
+            display: table;
+            border-collapse: collapse !important;
+            border-spacing: 0px !important;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+            border-color: #708090 !important;
+        }
+
+        .TableHeading {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: calibri;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body class='bodystyle'>
+    <div style="font-family:Calibri; font-size:15px">
+        Hi {----}, <br />
+        Please find below Budget / Actuals Details as on <b>{++++}</b>
+    </div>
+    <br /><br />
+
+    <h3 class="TableHeading"> Sales Support </h3>
+    <table class='courses-table'>
+        <thead>
+            <tr class="High">
+                <td></td>
+                <td colspan="3">Budget Allocated</td>
+                <td colspan="3">Actuals as per Emp PU</td>
+                <td colspan="3">Actuals as per Proj PU</td>
+                <td colspan="3">Diff : Emp PU vis-à-vis Budget </td>
+                <td colspan="3">Diff : Proj PU vis-à-vis Budget</td>
+
+            </tr>
+            <tr class="High">
+                <td>PU</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+            </tr>
+        </thead>
+        <tbody>
+            {1111}
+
+        </tbody>
+    </table>
+    <br />
+    <h3 class="TableHeading"> Solutions  </h3>
+    <table class='courses-table'>
+        <thead>
+
+            <tr class="High">
+                <td colspan="2"></td>
+                <td colspan="4">
+                    Budget Released based on HC
+                    (A)
+                </td>
+                <td colspan="4">
+                    Budget Allocated to SLs
+                    (B)
+                </td>
+                <td colspan="3">
+                    Project Type = "Solutions"
+                    (D)
+                </td>
+                <td colspan="3">
+                    Gap
+                    "D" - "B"
+                </td>
+                <td colspan="3">
+                    Gap
+                    "D" - "A"
+                </td>
+                <td colspan="3">
+                    Emp Practice Line = "Sales Supp" & <br /> Project Type = "Solutions"
+                </td>
+
+            </tr>
+            <tr class="High">
+                <td>SL</td>
+                <td>HC</td>
+                <td>Total</td>
+                <td>% of <br /> overall <br />HC</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>% of <br /> overall <br />HC</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+            </tr>
+        </thead>
+        <tbody>
+            {2222}
+
+        </tbody>
+    </table>
+    <br />
+    <h3 class="TableHeading"> Practice Sales  </h3>
+    <table class='courses-table'>
+        <thead>
+            <tr class="High">
+                <td colspan="1"></td>
+                <td colspan="3">
+                    Whose role capability is Practice Sales & may or may not be allocated to Sales Project Code i.e.,
+                </td>
+                <td colspan="3">
+                    Whose role capability is Practice Sales & allocated to Sales Project Code i.e.,
+                </td>
+                <td colspan="3">
+                    Whose role capability is Practice Sales & NOT allocated to Sales Project Code i.e.,
+                </td>
+                <td colspan="3">
+                    Whose role capability is NOT Practice Sales & allocated to Sales Project Code i.e.,
+                </td>
+                <td colspan="3">
+                    Whose role capability may or may not be Practice Sales & allocated to Sales Project Code & i.e.,
+                </td>
+                <td colspan="3">
+                    Allocated to Sales Project Code Vs whose role capability is Practice Sales i.e.,
+                </td> 
+            </tr>
+
+
+            <tr class="High">
+                <td colspan="1"></td>
+                <td colspan="3">
+                    Role Capability = <span style="color:red">**</span> "List" (A)
+                </td>
+                <td colspan="3">
+                    Role Capability = <span style="color:red">**</span> "List" & <br /> Project Type = "Project-Sales"
+                </td>
+                <td colspan="3">
+                    Role Capability = <span style="color:red">**</span> "List" & <br />
+                    Project Type /= "Project-Sales"
+                </td>
+                <td colspan="3">
+                    Role Capability /= <span style="color:red">**</span> "List" & <br /> Project Type = "Project-Sales"
+                </td>
+                <td colspan="3">
+                    Project Type = "Project-Sales" (B)
+                </td>
+                <td colspan="3">
+                    Gap "B" - "A"
+                </td>
+
+
+            </tr>
+            <tr class="High">
+                <td>SL</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            {3333}
+        </tbody>
+
+    </table>
+    <table class='courses-table' border="0">
+        <tr style="color:red; font-style:italic">
+            <td style="text-align:right; border:0px">*</td>
+            <td style="text-align:left ;border:0px" colspan="15">
+                Above table  based on Alcon Employee Report basis Employee PU <br />
+            </td>
+        </tr>
+        <tr style="color:red; font-style:italic">
+            <td style="text-align:right ;vertical-align:top; border:0px">**</td>
+            <td style="text-align:left;   border:0px" colspan="15">
+                List = " Client Partner", "Group Manager - Client Services" , "Group Practice Engagement Manager" , "Senior Manager - Client Services" , "Senior Practice Engagement Manager" , "Manager - Client Services" , "Practice Engagement Manager" , <br />  "Associate Business Development Manager" ,
+                "Associate Manager - Client Services" , "Associate Sales Manager" , "Associate Practice Engagement Manager" , "Business Development Executive" , <br />
+                "Business Development Associate" <b>(All roles under “Global Markets -> Client Services” sub-stream have been considered)</b>
+            </td>
+        </tr>
+        <tr style="color:red; font-style:italic">
+            <td style="text-align:right ;border:0px">***</td>
+            <td style="text-align:left ;border:0px" colspan="15">
+                This table will not account for employees allocated to our Practice Sales projects but don’t belong to our unit
+            </td>
+        </tr>
+        <tr style="color:red; font-style:italic">
+            <td style="text-align:right ;border:0px">***</td>
+            <td style="text-align:left ;border:0px" colspan="15">
+                Above all tables consider Emp unit in  EAS, NAM and BLGDLY only.
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    Regards,
+    <br />
+    Nebula Team
+</body>
+</html>
+
+

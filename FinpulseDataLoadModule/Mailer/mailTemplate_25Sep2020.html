@@ -1,0 +1,259 @@
+﻿<html lang="en">
+<head>
+
+    <style>
+        .white {
+            background-color: white;
+            color: black;
+        }
+
+        .courses-table {
+            font-size: 12px;
+            font-family: Calibri;
+        }
+
+        .bodystyle {
+            font-size: 14px;
+            font-family: Calibri;
+        }
+
+        .courses-table th {
+            border: 1px solid black;
+        }
+
+        .courses-table thead td {
+            border: 1px solid black;
+            padding: 9px;
+            text-align: center
+        }
+
+        .courses-table tbody td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center
+        }
+            /*.courses-table tbody td:nth-child(1) {               
+                text-align: left;
+            }*/
+
+
+        /*.tbl2 tbody td:nth-child(4) {
+            background-color: #e7e6e6;
+            font-weight: bold;
+        }
+        .tbl2 tbody td:nth-child(8) {
+            background-color: #e7e6e6;
+            font-weight: bold;
+        }*/
+         
+
+        .Graybold  {
+            background-color: #e7e6e6;
+            font-weight: bold;
+        }
+
+        .Headings {
+            border: 1px solid black;
+            background-color: #fce4d6;
+        }
+
+        .High {
+            border: 1px solid black;
+            background-color: #fce4d6;
+            font-weight: bold;
+        }
+
+
+        .Medium {
+            border: 1px solid #8a6d3b;
+            background-color: #faebcc;
+            color: #8a6d3b;
+        }
+
+        .Low {
+            border: 1px solid #3c763d;
+            background-color: #d6e9c6;
+            color: #3c763d;
+        }
+
+        table {
+            display: table;
+            border-collapse: collapse !important;
+            border-spacing: 0px !important;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+            border-color: #708090 !important;
+        }
+
+        .TableHeading {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: calibri;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body class='bodystyle'>
+    <div style="font-family:Calibri; font-size:15px">
+        Hi {----}, <br />
+        Please find below Budget / Actuals Details as on <b>{++++}</b>       
+    </div>
+    <br /><br />
+
+    <h3 class="TableHeading"> Sales Support </h3>
+    <table class='courses-table'>
+        <thead>
+            <tr class="High">
+                <td></td>
+                <td colspan="3">Budget Allocated</td>
+                <td colspan="3">Actuals as per Emp PU</td>
+                <td colspan="3">Actuals as per Proj PU</td>
+                <td colspan="3">Diff : Emp PU vis-à-vis Budget </td>
+                <td colspan="3">Diff : Proj PU vis-à-vis Budget</td>
+
+            </tr>
+            <tr class="High">
+                <td>PU</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+            </tr>
+        </thead>
+        <tbody>
+            {1111}
+
+        </tbody>
+    </table>
+    <br />
+    <h3 class="TableHeading"> Solutions  </h3>
+    <table class='courses-table'>
+        <thead>
+
+            <tr class="High">
+                <td colspan="2"></td>
+                <td colspan="4">
+                    Budget Released based on HC
+                    (A)
+                </td>
+                <td colspan="4">
+                    Budget Allocated to SLs
+                    (B)
+                </td>
+                <td colspan="3">
+                    Project Type = "Solutions"
+                    (D)
+                </td>
+                <td colspan="3">
+                    Gap
+                    "D" - "B"
+                </td>
+                <td colspan="3">
+                    Gap
+                    "D" - "A"
+                </td>
+                <td colspan="3">
+                    Emp Practice Line = "Sales Supp" & Project Type = "Solutions"
+                </td>
+
+            </tr>
+            <tr class="High">
+                <td>SL</td>
+                <td>HC</td>
+                <td>Total</td>
+                <td>% of <br /> overall <br />HC</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>% of <br /> overall <br />HC</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+            </tr>
+        </thead>
+        <tbody>
+            {2222}
+
+        </tbody>
+    </table>
+    <br />
+    <h3 class="TableHeading"> Practice Sales  </h3>
+    <table class='courses-table'>
+        <thead>
+
+            <tr class="High">
+                <td colspan="1"></td>
+                <td colspan="3">
+                    Emp Practice Line = "Sales"
+                    (A)
+                </td>
+                <td colspan="3">
+                    Project Type = "Project-Sales"  (B)
+                </td>
+                <td colspan="3">
+                    Gap
+                    "B" - "A"
+                </td>
+                <td colspan="3">
+                    Emp Practice Line = "Sales" & Working for Delivery
+                </td>
+                <td colspan="3">
+                    Emp Practice Line /= "Sales" & Working for Practice Sales
+                </td>
+
+
+            </tr>
+            <tr class="High">
+                <td>SL</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+                <td>Total</td>
+                <td>Onsite</td>
+                <td>Offshore</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            {3333}
+
+        </tbody>
+    </table>
+
+    <br />
+    Regards,<br />
+    Nebula Team
+</body>
+</html>
+

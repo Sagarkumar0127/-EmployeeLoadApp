@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <system.web>
+<customErrors mode="Off" > </customErrors >
+    
+    <compilation debug="true" targetFramework="4.5" />
+   
+
+      <httpRuntime targetFramework="4.5" executionTimeout="3600" maxRequestLength="2000000" />
+
+  </system.web>
+  <appSettings>
+    <add key="LoggerLocation" value="D:\SinglePageApps\FinpulseDataLoadAsp\FinpulseDataLoadAsp\FinpulseDataLoadAsp\ErrorLogger" />
+    <!--<add key="EmailCSV" value="Vijay_Nukala,GopinathReddy_P,sridevi_srirangan,karthik_mahalingam01,vikranth.d,dhanush.manangi,Tanay_Tejasvi,bhavana.dommaraju"/>-->
+    <add key="EmailCSV" value="Vijay_Nukala,GopinathReddy_P,sridevi_srirangan,karthik_mahalingam01,vikranth.d,Tanay_Tejasvi,murugaraj.k,raksha.r,pavitra"/>
+    <!--<add key="EmailCSV" value="dhanush.manangi,karthik_mahalingam01"/>-->
+    <add key="Host" value="BLRKECSMTP01" />
+    <add key="EnableSsl" value="false" />
+    <add key="UserName" value="Nebula@infosys.com" />
+    <add key="Password" value="Infy123+" />
+    <add key="Port" value="25" />
+    <add key="ExcelOperations" value="D:\SolutionApps\Employee Load App\FinpulseDataLoadAsp\ExcelOperations"/>
+    <add key="MailTemplatePath" value="D:\SolutionApps\Employee Load App\FinpulseDataLoadModule\Mailer" />
+
+  </appSettings>
+  <connectionStrings>
+    <add name="FPLoadConnectionString" connectionString="Data Source=nebula\mssqlserver1;Initial Catalog=eas_prod;Persist Security Info=True;User ID=nebula_sql;Password=python@123" />
+  </connectionStrings>
+
+  <system.webServer>
+    <staticContent>
+      <remove fileExtension=".woff" />
+      <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
+    </staticContent>
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="1073741824" />
+      </requestFiltering>
+    </security>
+    <modules runAllManagedModulesForAllRequests="true" />
+    <directoryBrowse enabled="true" />
+    <validation validateIntegratedModeConfiguration="false" />
+    <handlers>
+      <add name="ReportViewerWebControlHandler" preCondition="integratedMode" verb="*" path="Reserved.ReportViewerWebControl.axd" type="Microsoft.Reporting.WebForms.HttpHandler, Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </handlers>
+    <defaultDocument>
+      <files>
+                <add value="FPLoad.aspx" />
+        <add value="Data_load.aspx" />
+      </files>
+    </defaultDocument>
+    <httpProtocol>
+      <customHeaders>
+        <add name="X-UA-Compatible" value="IE=11" />
+      </customHeaders>
+    </httpProtocol>
+  </system.webServer>
+
+
+</configuration>
